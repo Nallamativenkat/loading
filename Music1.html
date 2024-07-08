@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+   
+  background-image: url("https://live.staticflickr.com/7351/10470856724_100672dbe8_b.jpg");
+    filter: blur(8px);
+  -webkit-filter: blur(8px); 
+  height: 100%;  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+ 
+.bg-pic {
+  
+  
+   
+  position: absolute;
+  top: 35%;
+  left: 2%; 
+  z-index: 2;
+  width: 100%;
+  padding: 0px;
+   
+}
+        h1{
+             display: inline-block;
+            padding: 1px;
+            position:relative;
+            margin-top: -35%;
+            left: 62%; 
+            
+            
+            
+            width: 50px;
+            height: 400px;
+            background-color: blue;
+        }
+        #bar1{
+            animation-name: load;
+            transform-origin: bottom;
+             animation-duration: 1s;
+             animation-direction: alternate;
+             animation-iteration-count: infinite;
+          }
+          @keyframes load {
+            0%  { 
+                transform: scaleY( 0 );
+             }
+            100% { 
+                transform: scaleY( 1 );
+             }
+          }
+          #bar2{
+            animation-name: load;
+            transform-origin: bottom;
+             animation-duration: 1s;
+             animation-delay:0.2s ;
+             animation-direction: alternate;
+             animation-iteration-count: infinite;
+          }
+          @keyframes load {
+            0%  { 
+                transform: scaleY( 0 );
+             }
+            100% { 
+                transform: scaleY( 1 );
+             }
+          }
+          #bar3{
+            animation-name: load;
+            transform-origin: bottom;
+             animation-duration: 1s;
+             animation-delay: 0.4s;
+             animation-direction: alternate;
+             animation-iteration-count: infinite;
+          }
+          @keyframes load {
+            0%  { 
+                transform: scaleY( 0 );
+             }
+            100% { 
+                transform: scaleY( 1 );
+             }
+          }
+          #bar4{
+            animation-name: load;
+            transform-origin: bottom;
+             animation-duration: 1s;
+             animation-delay: 0.6s;
+             animation-direction: alternate;
+             animation-iteration-count: infinite;
+          }
+          @keyframes load {
+            0%  { 
+                transform: scaleY( 0 );
+             }
+            100% { 
+                transform: scaleY( 1 );
+             }
+          }
+          #bar5{
+            animation-name: load;
+            transform-origin: bottom;
+             animation-duration: 1s;
+             animation-delay: 0.8s;
+             animation-direction: alternate;
+             animation-iteration-count: infinite;
+          }
+          @keyframes load {
+            0%  { 
+                transform: scaleY( 0 );
+             }
+            100% { 
+                transform: scaleY( 1 );
+             }
+          }
+           
+</style>
+</head>
+<body>
+
+<div class="bg-image"></div>
+
+<div class="bg-pic">
+  <h2><img src="https://live.staticflickr.com/7351/10470856724_100672dbe8_b.jpg" width="25%"></h2>
+  <h3 style="font-size:50px"> </h3>
+  <h5> AB Yeavro Ne Baby song . MP3</h5>
+  <h4><audio src="./AB Yevaro Nee Baby - SenSongsMp3.Co.mp3" controls></audio></h4>
+  <span>
+    <h1 id="bar1"></h1>
+    <h1 id="bar2"></h1>
+    <h1 id="bar3"></h1>
+    <h1 id="bar4"></h1>
+    <h1 id="bar5"></h1>
+    <h1 id="bar3"></h1>
+    <h1 id="bar4"></h1>
+    <h1 id="bar5"></h1>
+  </span>
+  <p style=""> </p>
+</div>
+
+</body>
+</html>
