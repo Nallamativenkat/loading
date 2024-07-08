@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body fieldset{
+            background-color: rgb(30, 223, 75);
+        }
+        h1{
+            position:relative;
+            left: 40%;
+            display: inline-block;
+            margin-top: 5%; 
+              padding-left: 0%;
+            border-radius: 100%;
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+           font-size: 480px;
+        box-shadow: 2px 5px 10px black;
+        }
+        h1{
+            
+            animation-name:move;
+            animation-duration: 1s;
+            animation-direction:alternate ;
+            animation-iteration-count: infinite;
+          
+        }
+        @keyframes move{
+            0%{ 
+                
+                 transform: translate(0,350px);    
+            }
+             100%{
+                transform: translate(0,0);
+             }
+            }
+            #ball2{
+                animation-name:move;
+                 
+                animation-delay: 0.4s;
+                animation-direction:alternate ;
+                animation-iteration-count: infinite;
+              
+            }
+            @keyframes move{
+                0%{ 
+                     transform: translate(0,250px);    
+                }
+                100%{
+                    transform: translate(0,0);
+                 }
+            }
+            
+        #ball3{
+            animation-name:move;
+            animation-duration: 1s;
+            animation-delay: 0.7s;
+            animation-direction:alternate ;
+            animation-iteration-count: infinite;
+          
+        }
+        @keyframes move{
+            0%{ 
+                 transform: translate(0,270px);    
+            }
+            100%{
+                transform: translate(0,0);
+             }
+        }
+        h2{
+            display: inline-block;
+             
+            position:relative;
+            left: 45%; 
+            margin-top: 19%; 
+            padding-left: 0%;
+            border-radius: 100%;
+            width: 20px;
+            height: 20px;
+            background-color: rgb(221, 228, 207);
+            font-size: 480px;
+             
+              
+        }
+        #loading1{
+            
+            animation-name:loading;
+            animation-duration: 1s;
+            animation-direction:alternate ;
+            animation-iteration-count: infinite;
+          
+        }
+        @keyframes loading
+            0%{ 
+                 transform: scale(0,8px);    
+            }
+            100%{
+                transform: scale(0,0);
+            }
+        #loading2{
+            
+                animation-name:loading;
+                animation-duration: 1s;
+                animation-direction:alternate ;
+                animation-iteration-count: infinite;
+                animation-delay: 0.4s;
+              
+            }
+            @keyframes loading{
+                0%{ 
+                     transform: scale(0,8px);    
+                }
+                100%{
+                    transform: scale(0,0);
+                }}
+         #loading3{
+            
+            animation-name:loading;
+            animation-duration: 1s;
+            animation-direction:alternate ;
+            animation-iteration-count: infinite;
+            animation-delay: 0.6s;
+          
+        }
+        @keyframes loading
+            0%{ 
+                 transform: scale(0,8px);    
+            }
+            100%{
+                transform: scale(0,0);
+            }
+
+              #loading4{
+            
+            animation-name:loading;
+            animation-duration: 1s;
+            animation-direction:alternate ;
+            animation-iteration-count: infinite;
+            animation-delay: 0.8s;
+          
+        }
+        @keyframes loading
+            0%{ 
+                 transform: scale(0,8px);    
+            }
+            100%{
+                transform: scale(0,0);
+            }
+             h4{
+                position: absolute;
+                margin-left: 19%;
+                z-index: 1px;
+             } 
+             h3{
+                position: absolute;
+                top: 850px;
+                margin-left: 41%;
+                z-index: 1px;
+                color: azure;
+             }
+    </style>
+</head>
+<body><fieldset><fieldset style="background-color: aqua;">
+    <div><p align="center" style="font-size: 30px;"><b>Bouncing Balls </b></p>
+        <h1 style="animation-timing-function: ease;"></h1>
+        <h1 id="ball2" style="animation-timing-function: ease;"></h1>
+        <h1 id="ball3" style="animation-timing-function: ease-out;"></h1>
+    </fieldset></div><br><fieldset style="background-color:bisque;">
+    <h4><img src="./WhatsApp Image 2024-07-08 at 20.21.34_a4197cf5.jpg" alt="" width="800px" height="500px"  ></h4>
+        <div id="loading">
+        <h3 align="center" style="font-size: 25px;">Loading........</h3>
+        
+        <h2 id="loading1"></h2>
+        <h2 id="loading2"></h2>
+        <h2 id="loading3"></h2>
+        <h2 id="loading4"></h2>
+    </fieldset></div>
+</fieldset>
+</body>
+</html>
